@@ -1,0 +1,75 @@
+body {
+    background-color: aliceblue;
+    padding: 0;
+    margin: 0;
+    height: 150vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+nav {
+    width: 40vw;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    position: relative;
+    top:30px;
+    left: 850px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    height: 40px;
+    width: 100px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+li > span {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    font-size: 24px;
+}
+
+/* First span (icon) - Visible by default */
+li > span:nth-child(1) {
+    color: white;
+    background-color: #00008B;
+    font-size: 30px; /* Adjust size for icons */
+}
+
+/* Second span (title) - Hidden initially */
+li > span:nth-child(2) {
+    color: #00008B;
+    background-color: #00008B;
+    transform: translateY(100%);
+}
+
+/* On hover, show the title and hide the icon */
+li:hover span:nth-child(1) {
+    transform: translateY(-100%);
+}
+
+li:hover span:nth-child(2) {
+    transform: translateY(0);
+}
+
+/* Styling for links inside <span> */
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}

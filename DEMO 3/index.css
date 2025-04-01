@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+* {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/*
+.header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    left: 0%;
+    width: 100%;
+    box-shadow: 0 2px 8px #b2babb;
+    background-color:#b2babb ;
+    z-index: 100;
+}
+    */
+.green-box {
+    position: fixed; /* Ensures the box stays at the top of the page */
+    top: 0; /* Aligns it to the very top */
+    width: 100%; /* Spans the entire width of the page */
+    height: 1.5rem; /* Sets the height to 1cm */
+    background: linear-gradient(to right, #229954 0%, #1a5276 100%); /* Adds the gradient background */
+    z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+.nav{
+    height:3.5rem ;
+}
